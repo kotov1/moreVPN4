@@ -1,0 +1,175 @@
+@import "vars"
+
+@media only screen and (min-width : 400px)
+	.step
+		padding-left: 65px
+	.step-wrapper::before
+		left: 35px
+	.step-title::before
+		left: -41px
+	.step-title::after
+		left: -56px
+	/**/
+
+
+@media only screen and (min-width : 480px)
+
+	.step-title
+		br
+			display: none
+
+	.tarrifs-item
+		max-width: 305px
+		margin: 0 0 20px 15px
+	.tarrifs-item.recommend, .tarrifs-item:hover
+		max-width: 335px
+
+	/**/
+
+
+
+@media only screen and (min-width : 768px)
+
+
+	.logo-wrap
+		margin-left: 0
+	.page-heading
+		margin-top: 1.9em
+		font-size: 2.375rem
+		text-align: left
+		
+	.achiev-icons
+		right: auto
+		left: 30px
+		bottom: 30px
+	.step-wrapper::before
+		left: 81px
+	.step
+		padding-left: 120px
+	.step-title::before
+		left: -50px
+	.step-title::after
+		left: -120px
+		width: auto
+		content: 'step ' counter(step)
+		text-transform: uppercase
+		font-size: 18px
+
+	.step-accordion-btn-text 
+		width: 130px
+		display: inline-block
+
+	.howTo
+		background: url('../img/bg/main-page/bg2-lg.jpg') no-repeat 75% 50%
+
+	.weHave
+		padding: 3rem 0
+		&-title
+			br
+				display: none
+		&-text
+			margin: 2rem 15% 1rem
+
+	.trusted
+		padding: 3.125rem 0
+		img
+			margin: 15px 17px
+	.sponsored
+		padding: 3.125rem 0
+		img
+			margin: 15px 10px
+
+	.footer-list-title
+		text-decoration: none
+		padding: .1rem 0
+
+	.get-link-appStore, .howTo-link-appStore
+		margin-left: auto
+		margin-right: 10px
+	.get-link-googlePlay, .howTo-link-googlePlay
+		margin-right: auto
+		margin-left: 10px
+
+
+	.thanks-page
+		min-height: 100vh
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		background-color: #262527
+
+
+
+	.timer-val
+		letter-spacing: 4px
+	/**/
+
+
+@media only screen and (min-width : 1200px)
+	.achiev-icons
+		width: 1140px
+		left: 50%
+		transform: translateX(-50%)
+	.page-heading
+		margin-top: 2.5em
+		font-size: 3rem
+
+	.tarrifs
+		min-height: 320px
+		display: flex
+		justify-content: center
+		align-items: center
+	.tarrifs-item
+		flex: 0 0 305px
+		margin: 0 10px
+	.tarrifs-item.recommend, .tarrifs-item:hover
+		flex: 0 0 335px
+		margin: 0 10px
+
+	.advantages
+		&-title
+			padding: 0
+			text-align: left
+		&-list
+			width: 100%
+			display: flex
+			flex-wrap: wrap
+			&-item
+				flex: 0 0 50%
+				max-width: 50%
+	
+	.weHave
+		&-text
+			margin: 2rem 25% 1rem
+
+	.trusted
+		padding: 5rem 0 2rem
+
+
+	.description
+		padding: 2rem 0 4rem	
+
+	.get-title
+		padding: 0
+
+	.footer-payment-logos
+		img
+			display: inline-block
+			margin-left: 10px
+
+	.howTo-link, .get-link
+		transition: transform .2s
+		&:active
+			transform: translate(1px, 1px)
+			transition: transform .2s
+			
+	/**/
+
+
+@media only screen and (min-width : 1400px)
+
+	.header, .howTo, .weHave
+		background-size: cover
+	.header
+		background-position: 60% 0
+	/**/

@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		
+		<meta name="theme-color" content="#000">
+		<meta name="msapplication-navbutton-color" content="#000">
+		<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+		<link rel="icon" type="image/png" href="img/favicon/favicon.png">
+
+		<title>Landing4</title>
+
+		<!-- bootstrap css -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<!-- custom styles -->
+		<link href="css/main.css" rel="stylesheet">
+	</head>
+
+	<body>
+
+
+		<div class="page-wrapper">
+
+			<header class="header">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="top-line">
+								<div class="logo-wrap">
+									<img src="img/logo.svg" alt="Logo">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-md-8">
+							<div class="bottom-line">
+								<h1 class="page-heading">Get access to endless world of the Internet.</h1>
+							</div>
+							<div class="btn-wrap mt-4 text-center text-md-left">
+								<button class="btn">get vpn now</button>
+							</div>
+						</div>
+					</div>
+					<div class="timer">
+						<div class="timer-title">Offer Ends in</div>
+						<div class="timer-val" id="js-timer">00:00:00</div>
+						<div class="timer-units"><span>hours</span><span class="ml-2 mr-2">minutes</span><span>seconds</span></div>
+					</div>
+				</div>
+			</header>
+
+
+			<div class="steps">
+				<div class="container">
+					<div class="step-wrapper">
+						<div class="step step1 pb-4">
+							<div class="row">
+								<div class="col-12">
+									<div class="section-title step-title" data-toggle="collapse" data-target="#tarrifs-collapse" aria-controls="tarrifs-collapse" aria-expanded="true" role="button">Choose best<br> to yourself</div>
+								</div>
+								<div class="col-12">
+									<div class="collapse show" id="tarrifs-collapse">
+										<div class="tarrifs">	
+
+											<div class="tarrifs-item recommend">
+												<p class="tarrifs-description">1 - year plan</p>
+												<p class="tarrifs-discount">save 15%</p>
+												<p class="tarrifs-price-old">$5.82</p>
+												<p class="tarrifs-price"><span class="symbol">$</span>5.82<span class="period">/m</span></p>
+												<p class="tarrifs-info">$99.90 Billed every 1 year</p>
+												<button class="btn tarrifs-purchase">get 1 year plan</button>
+												<p class="tarrifs-guarantee">7 - days money back guarantee</p>
+											</div>
+
+										<div class="tarrifs-item">
+												<p class="tarrifs-description">6 - month plan</p>
+												<p class="tarrifs-discount">save 10%</p>
+												<p class="tarrifs-price-old">$5.82</p>
+												<p class="tarrifs-price"><span class="symbol">$</span>6.99<span class="period">/m</span></p>
+												<p class="tarrifs-info">$99.90 Billed every 6 months</p>
+												<button class="btn tarrifs-purchase">get 6 months plan</button>
+												<p class="tarrifs-guarantee">7 - days money back guarantee</p>
+											</div>
+
+											<div class="tarrifs-item">
+												<p class="tarrifs-description">1 - months plan</p>
+												<p class="tarrifs-discount">save 0%</p>
+												<p class="tarrifs-price"><span class="symbol">$</span>7.99<span class="period">/m</span></p>
+												<p class="tarrifs-info">$9.90 Billed every 1 month</p>
+												<button class="btn tarrifs-purchase">get 1 month plan</button>
+												<p class="tarrifs-guarantee">7 - days money back guarantee</p>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div> <!-- /.step1 -->
+
+						<div class="step step2 pb-4">
+							<div class="row">
+								<div class="col-12">
+									<div class="section-title step-title" data-toggle="collapse" data-target="#login-collapse" aria-controls="login-collapse" aria-expanded="false" role="button">Enter account<br> information</div>
+								</div>
+								<div class="col-12">
+									<div class="collapse" id="login-collapse">
+										<div class="step-info">Already signed up? <a href="#">Sign in now</a></div>
+										<form action="#">
+											<div class="row align-items-xl-end">
+												<div class="col-12 col-md-9 col-lg-7 col-xl-6">
+													<input type="email" name="Email" class="form-control" autocomplete="off" placeholder="Your email" required>
+													<input type="password" name="Password" class="form-control" id="password" autocomplete="off" placeholder="Password" required>
+													<input type="password" name="Password Confirm" class="form-control" id="password-confirm" autocomplete="off" placeholder="Confirm password" required>
+													<div class="error">Passwords do not match</div>
+												</div>
+												<div class="col-12 col-md-9 col-lg-7 col-xl-6">
+													<div class="form-text">We are committed to keeping your information confidential, and will use it solely to provide you with content and login information related to NOVAVPN.
+														<button class="btn form-text-btn">confirm</button>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div> <!-- /.step2 -->
+					</div>
+
+					<div class="step step3">
+						<div class="row">
+							<div class="col-12">
+								<div class="section-title step-title" data-toggle="collapse" data-target="#step-accordion" aria-controls="step-accordion" aria-expanded="false" role="button">Choose billing<br> method</div>
+							</div>
+							<div class="col-12">
+								<div class="step-accordion collapse" id="step-accordion">
+									<div class="card">
+											<div class="card-header" id="headingOne">
+												<button class="step-accordion-btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+														<span class="step-accordion-btn-text">Credit Card</span>
+														<img src="img/steps-payment-logos/visa.png" alt="visa" class="d-md-inline-block">
+														<img src="img/steps-payment-logos/mastercard.png" alt="mastercard" class="d-md-inline-block">
+														<img src="img/steps-payment-logos/americanexpress.png" alt="americanexpress" class="d-md-inline-block">
+														<img src="img/steps-payment-logos/jch.png" alt="jch" class="d-md-inline-block">
+														<img src="img/steps-payment-logos/maestro.png" alt="maestro" class="d-lg-inline-block">
+														<img src="img/steps-payment-logos/visae.png" alt="visa electron" class="d-lg-inline-block">
+														<img src="img/steps-payment-logos/dc.png" alt="diners club" class="d-lg-inline-block">
+												</button>
+											</div>
+						
+											<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#step-accordion">
+												<div class="collapse-form">
+													<form action="#">
+														<div class="row">
+															<div class="form-group col-12 col-md-6">
+																	<label for="inputFirstName1">First name</label>
+																	<input type="text" class="form-control" id="inputFirstName1" autocomplete="off" required>
+															</div>
+															<div class="form-group col-12 col-md-6">
+																	<label for="inputLastName1">Last name</label>
+																	<input type="text" class="form-control" id="inputLastName1" autocomplete="off" required>
+															</div>
+															<div class="form-group col-12 col-md-6">
+																	<label for="inputCardNumber1">Сard number <i class="my-tooltip" data-toggle="tooltip" data-placement="top" title="Enter 16 numbers"></i></label>
+																	<input type="text" class="form-control restrict-str" id="inputCardNumber1" autocomplete="off" maxlength="16" placeholder="0000 0000 0000 0000" required>
+															</div>
+															<div class="form-group col-6">
+																	<label for="inputExpirationDate1">Expiration date</label>
+																	<input type="text" class="form-control restrict-str" id="inputExpirationDate1" autocomplete="off" maxlength="4" placeholder="MM / YY" required>
+															</div>
+															<div class="form-group col-6">
+																	<label for="inputCvv1">cvv<i class="my-tooltip" data-toggle="tooltip" data-placement="top" title="Enter 3 numbers"></i></label>
+																	<input type="text" class="form-control restrict-str" id="inputCvv1" placeholder="000" autocomplete="off" maxlength="3" required>
+															</div>
+															<div class="form-group col-6">
+																	<label for="inputPostalCode1">Postal code<i class="my-tooltip" data-toggle="tooltip" data-placement="top" title="Postal code is bla bla bla"></i></label>
+																	<input type="text" class="form-control restrict-str" id="inputPostalCode1" autocomplete="off" maxlength="3" placeholder="000" required>
+															</div>
+															<div class="col-12"><div class="form-divider"></div></div>
+														</div>
+														<div class="row mt-md-2">
+															<div class="form-group col-12 col-md-6">
+																	<label for="inputCoupon1"><a href="#">Got coupon?</a></label>
+																	<input type="text" class="form-control restrict-str" id="inputCoupon1" placeholder="0000 0000 0000 0000" autocomplete="off" maxlength="16">
+															</div>
+															<div class="col-12 col-md-6 d-flex align-items-center">
+																<button type="submit" class="btn step-form-btn">Join now</button>
+															</div>
+														</div>
+													</form>
+													<div class="step3-guarantee">Secure checkout. You’re 100% by our 30-day money-back guarantee.</div>
+													<div class="step3-confirm">By submitting this form you agree to our <a href="#">Terms and Conditions</a></div>
+												</div>
+											</div>
+									</div> <!-- /.card -->
+
+									<div class="card">
+											<div class="card-header" id="headingTwo">
+												<button class="step-accordion-btn" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+														<span class="step-accordion-btn-text">Bitcoin</span>
+														<img src="img/steps-payment-logos/btc.png" alt="bitcoin" class="d-md-inline-block">
+												</button>
+											</div>
+						
+											<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#step-accordion">
+												<div class="collapse-form">
+													<form action="#">
+														<div class="row">
+															<div class="form-group col-12 col-md-6">
+																	<label for="inputFirstName2">First name</label>
+																	<input type="text" class="form-control" id="inputFirstName2" autocomplete="off" required>
+															</div>
+															<div class="form-group col-12 col-md-6">
+																	<label for="inputLastName2">Last name</label>
+																	<input type="text" class="form-control" id="inputLastName2" autocomplete="off" required>
+															</div>
+															<div class="form-group col-12 col-md-6">
+																	<label for="inputCardNumber2">Сard number <i class="my-tooltip" data-toggle="tooltip" data-placement="top" title="Enter 16 numbers"></i></label>
+																	<input type="text" class="form-control restrict-str" id="inputCardNumber2" autocomplete="off" maxlength="16" placeholder="0000 0000 0000 0000" required>
+															</div>
+															<div class="form-group col-6">
+																	<label for="inputExpirationDate2">Expiration date</label>
+																	<input type="text" class="form-control restrict-str" id="inputExpirationDate2" autocomplete="off" maxlength="4" placeholder="MM / YY" required>
+															</div>
+															<div class="form-group col-6">
+																	<label for="inputCvv2">cvv<i class="my-tooltip" data-toggle="tooltip" data-placement="top" title="Enter 3 numbers"></i></label>
+																	<input type="text" class="form-control restrict-str" id="inputCvv2" placeholder="000" autocomplete="off" maxlength="3" required>
+															</div>
+															<div class="form-group col-6">
+																	<label for="inputPostalCode2">Postal code<i class="my-tooltip" data-toggle="tooltip" data-placement="top" title="Postal code is bla bla bla"></i></label>
+																	<input type="text" class="form-control restrict-str" id="inputPostalCode2" autocomplete="off" maxlength="3" placeholder="000" required>
+															</div>
+															<div class="col-12"><div class="form-divider"></div></div>
+														</div>
+														<div class="row mt-md-2">
+															<div class="form-group col-12 col-md-6">
+																	<label for="inputCoupon2"><a href="#">Got coupon?</a></label>
+																	<input type="text" class="form-control" id="inputCoupon2" placeholder="0000 0000 0000 0000" autocomplete="off" maxlength="16">
+															</div>
+															<div class="col-12 col-md-6 d-flex align-items-center">
+																<button type="submit" class="btn step-form-btn">Join now</button>
+															</div>
+														</div>
+													</form>
+													<div class="step3-guarantee">Secure checkout. You’re 100% by our 30-day money-back guarantee.</div>
+													<div class="step3-confirm">By submitting this form you agree to our <a href="#">Terms and Conditions</a></div>
+												</div>
+											</div>
+									</div> <!-- /.card -->
+
+									<div class="card">
+											<div class="card-header" id="headingThree">
+												<button class="step-accordion-btn" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+														<span class="step-accordion-btn-text">Other</span>
+														<img src="img/steps-payment-logos/wp.png" alt="worldpay" class="d-md-inline-block">
+														<img src="img/steps-payment-logos/sage.png" alt="sage" class="d-md-inline-block">
+														<img src="img/steps-payment-logos/skrill.png" alt="skrill" class="d-md-inline-block">
+														<img src="img/steps-payment-logos/cirrus.png" alt="cirrus" class="d-md-inline-block">
+												</button>
+											</div>
+						
+											<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#step-accordion">
+												<div class="collapse-form">
+													<form action="#">
+														<div class="row">
+															<div class="form-group col-12 col-md-6">
+																	<label for="inputFirstName3">First name</label>
+																	<input type="text" class="form-control" id="inputFirstName3" autocomplete="off" required>
+															</div>
+															<div class="form-group col-12 col-md-6">
+																	<label for="inputLastName3">Last name</label>
+																	<input type="text" class="form-control" id="inputLastName3" autocomplete="off" required>
+															</div>
+															<div class="form-group col-12 col-md-6">
+																	<label for="inputCardNumber3">Сard number <i class="my-tooltip" data-toggle="tooltip" data-placement="top" title="Enter 16 numbers"></i></label>
+																	<input type="text" class="form-control restrict-str" id="inputCardNumber3" autocomplete="off" maxlength="16" placeholder="0000 0000 0000 0000" required>
+															</div>
+															<div class="form-group col-6">
+																	<label for="inputExpirationDate3">Expiration date</label>
+																	<input type="text" class="form-control restrict-str" id="inputExpirationDate3" autocomplete="off" maxlength="4" placeholder="MM / YY" required>
+															</div>
+															<div class="form-group col-6">
+																	<label for="inputCvv3">cvv<i class="my-tooltip" data-toggle="tooltip" data-placement="top" title="Enter 3 numbers"></i></label>
+																	<input type="text" class="form-control restrict-str" id="inputCvv3" placeholder="000" autocomplete="off" maxlength="3" required>
+															</div>
+															<div class="form-group col-6">
+																	<label for="inputPostalCode3">Postal code<i class="my-tooltip" data-toggle="tooltip" data-placement="top" title="Postal code is bla bla bla"></i></label>
+																	<input type="text" class="form-control restrict-str" id="inputPostalCode3" autocomplete="off" maxlength="3" placeholder="000" required>
+															</div>
+															<div class="col-12"><div class="form-divider"></div></div>
+														</div>
+														<div class="row mt-md-2">
+															<div class="form-group col-12 col-md-6">
+																	<label for="inputCoupon3"><a href="#">Got coupon?</a></label>
+																	<input type="text" class="form-control restrict-str" id="inputCoupon3" placeholder="0000 0000 0000 0000" autocomplete="off" maxlength="16">
+															</div>
+															<div class="col-12 col-md-6 d-flex align-items-center">
+																<button type="submit" class="btn step-form-btn">Join now</button>
+															</div>
+														</div>
+													</form>
+													<div class="step3-guarantee">Secure checkout. You’re 100% by our 30-day money-back guarantee.</div>
+													<div class="step3-confirm">By submitting this form you agree to our <a href="#">Terms and Conditions</a></div>
+												</div>
+											</div>
+									</div> <!-- /.card -->
+
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div> <!-- /.container -->
+			</div>
+
+
+			<section class="howTo">
+				<div class="container">
+					<div class="row align-items-md-center">
+						<div class="col-12">
+							<h2 class="howTo-title">How to download the app?</h2>
+							<p class="howTo-text d-none d-md-block">Just download the appfrom store.<br> Simple, nice and user-friendly application of vpn.</p>
+						</div>
+						<div class="col-12">
+							<div class="row no-gutters">
+								<div class="col-12 col-md-6"><a href="#" class="howTo-link howTo-link-appStore"></a></div>
+								<div class="col-12 col-md-6"><a href="#" class="howTo-link howTo-link-googlePlay"></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+			<section class="advantages">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h2 class="advantages-title">What Makes NOVAVPN the Best?</h2>
+						</div>
+						<div class="col-12 d-md-flex justify-content-md-center">
+							<ul class="advantages-list">
+								<li class="advantages-list-item">Unlimited data usage</li>
+								<li class="advantages-list-item">Simple, fast download</li>
+								<li class="advantages-list-item">Zero restrictions and no download caps</li>
+								<li class="advantages-list-item">24x7x365 support team</li>
+								<li class="advantages-list-item">700+ servers, 70+ server locations worldwide</li>
+								<li class="advantages-list-item">No third parties (we own servers, network & hardware)</li>
+								<li class="advantages-list-item">Proprietary Chameleon technology</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+			<section class="weHave">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h2 class="weHave-title">We have 250+ servers<br> in 10 countries</h2>
+							<p class="weHave-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati laborum ea ipsum dolores molestias quidem quia facere dignissimos aut ipsam.</p>
+						</div>
+						<div class="col-12 text-center"><button class="btn weHave-btn">get vpn now</button></div>
+					</div>
+				</div>
+			</section>
+
+
+
+				<section class="trusted">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h2 class="trusted-title">Trusted by companies including</h2>
+						</div>
+						<div class="col-12 d-flex flex-wrap justify-content-center align-items-center">
+							<img src="img/trusted/forbes.png" alt="forbes">
+							<img src="img/trusted/yahoo.png" alt="yahoo">
+							<img src="img/trusted/business.png" alt="business insider">
+							<img src="img/trusted/pc.png" alt="pc word">
+							<img src="img/trusted/msn.png" alt="msn money">
+							<img src="img/trusted/cbs.png" alt="cbs news">
+							<img src="img/trusted/network.png" alt="network world">
+							<img src="img/trusted/kiplinger.png" alt="kiplinger">
+							<img src="img/trusted/register.png" alt="the register">
+							<img src="img/trusted/att.png" alt="at&t">
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+			<section class="sponsored">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h2 class="trusted-title">Proud sponsor of:</h2>
+						</div>
+						<div class="col-12 d-flex flex-wrap justify-content-center align-items-center">
+							<img src="img/sponsored/eff.png" alt="eff">
+							<img src="img/sponsored/future.png" alt="fight for future">
+							<img src="img/sponsored/access.png" alt="accessnow">
+							<img src="img/sponsored/krita.png" alt="krita">
+							<img src="img/sponsored/hacks.png" alt="la hacks">
+							<img src="img/sponsored/usenix.png" alt="usenix">
+							<img src="img/sponsored/society.png" alt="internet society">
+							<img src="img/sponsored/gnome.png" alt="gnome">
+							<img src="img/sponsored/ces.png" alt="ces">
+							<img src="img/sponsored/wire.png" alt="wireguard">
+							<img src="img/sponsored/encrypt.png" alt="let's encrypt">
+							<img src="img/sponsored/blender.png" alt="blender">
+							<img src="img/sponsored/fff.png" alt="sponsored">
+							<img src="img/sponsored/apache.png" alt="apache">
+							<img src="img/sponsored/tnabc.png" alt="tnabc">
+							<img src="img/sponsored/xindex.png" alt="xindex">
+							<img src="img/sponsored/blockexp.png" alt="blockexplorer">
+							<img src="img/sponsored/btct.png" alt="bitcoin talk">
+							<img src="img/sponsored/sfc.png" alt="soft freedom conservancy">
+							<img src="img/sponsored/freenode.png" alt="freenode">
+							<img src="img/sponsored/org.png" alt="open rights groop">
+							<img src="img/sponsored/rightscon.png" alt="rightscon">
+							<img src="img/sponsored/lfa.png" alt="lfa">
+							<img src="img/sponsored/itu.png" alt="itu">
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+			<section class="description">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h2 class="description-title">Why Do You Need NOVAVPN?</h2>
+						</div>
+						<div class="col-12 col-md-6 col-xl-4 mt-5">
+							<div class="description-img"><img src="img/descr-img/highspeed.svg" alt="Highspeed VPN"></div>
+							<div class="description-subtitle">Highspeed VPN</div>
+							<div class="description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</div>
+						</div>
+						<div class="col-12 col-md-6 col-xl-4 mt-5">
+							<div class="description-img"><img src="img/descr-img/nologging.svg" alt="No Logging"></div>
+							<div class="description-subtitle">No Logging</div>
+							<div class="description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
+						</div>
+						<div class="col-12 col-md-6 col-xl-4 mt-5">
+							<div class="description-img"><img src="img/descr-img/unlimited.svg" alt="Unlimited Server Changes"></div>
+							<div class="description-subtitle">Unlimited Server Changes</div>
+							<div class="description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+						</div>
+						<div class="col-12 col-md-6 col-xl-4 mt-5">
+							<div class="description-img"><img src="img/descr-img/multiple.svg" alt="Multiple Loggins"></div>
+							<div class="description-subtitle">Multiple Loggins</div>
+							<div class="description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</div>
+						</div>
+						<div class="col-12 col-md-6 col-xl-4 mt-5">
+							<div class="description-img"><img src="img/descr-img/protection.svg" alt="DNS leak protection"></div>
+							<div class="description-subtitle">DNS leak protection</div>
+							<div class="description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
+						</div>
+						<div class="col-12 col-md-6 col-xl-4 mt-5">
+							<div class="description-img"><img src="img/descr-img/aes.svg" alt="AES-256"></div>
+							<div class="description-subtitle">AES-256</div>
+							<div class="description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+			<section class="get">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h2 class="get-title">Get NovaVPN Mobile Apps</h2>
+							<div class="get-subtitle">Download our apps for IOS and Android platforms</div>
+						</div>
+						<div class="col-12">
+							<div class="get-links">
+								<div class="row no-gutters">
+									<div class="col-12 col-md-6"><a href="#" class="get-link get-link-appStore"></a></div>
+									<div class="col-12 col-md-6"><a href="#" class="get-link get-link-googlePlay"></a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+			<footer class="footer" id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-xl-8">
+							<div class="footer-links">
+								<div class="row">
+									<div class="col-12 col-md-3">
+										<div role="button" class="footer-list-title" data-toggle="collapse" data-target="#footer-list1" aria-expanded="false" aria-controls="footer-list1">learn more</div>
+										<ul class="footer-list collapse" id="footer-list1" data-parent="#footer">
+											<li><a href="#">What is VPN?</a></li>
+											<li><a href="#">VPN Sercice</a></li>
+											<li><a href="#">VPN Softvare</a></li>
+										</ul>
+									</div>
+									<div class="col-12 col-md-3">
+										<div role="button" class="footer-list-title" data-toggle="collapse" data-target="#footer-list2" aria-expanded="false" aria-controls="footer-list2">about</div>
+										<ul class="footer-list collapse" id="footer-list2" data-parent="#footer">
+											<li><a href="#">Support</a></li>
+											<li><a href="#">Languages</a></li>
+											<li><a href="#">Referances</a></li>
+										</ul>
+									</div>
+									<div class="col-12 col-md-3">
+										<div role="button" class="footer-list-title" data-toggle="collapse" data-target="#footer-list3" aria-expanded="false" aria-controls="footer-list3">service</div>
+										<ul class="footer-list collapse" id="footer-list3" data-parent="#footer">
+											<li><a href="#">Software</a></li>
+											<li><a href="#">Speed Test</a></li>
+											<li><a href="#">Affilates</a></li>
+										</ul>
+									</div>
+									<div class="col-12 col-md-3">
+										<div role="button" class="footer-list-title" data-toggle="collapse" data-target="#footer-list4" aria-expanded="false" aria-controls="footer-list4">social</div>
+										<ul class="footer-list collapse" id="footer-list4" data-parent="#footer">
+											<li><a href="#">Facebook</a></li>
+											<li><a href="#">Linkedin</a></li>
+											<li><a href="#">Twitter</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-xl-4">
+							<div class="footer-info">
+								<div class="row align-items-md-center">
+									<div class="col-12">
+										<div class="footer-payment-logos d-flex justify-content-between justify-content-xl-end align-items-center">
+											<img src="img/footer-payment-logos/visa.png" alt="visa">
+											<img src="img/footer-payment-logos/mastercard.png" alt="mastercard">
+											<img src="img/footer-payment-logos/maestro.png" alt="maestro">
+											<img src="img/footer-payment-logos/paypal.png" alt="paypal">
+										</div>
+									</div>
+									<div class="col-12 d-md-flex justify-content-md-center text-center">
+										<div class="footer-copy mr-md-2">Copyright  2017  NOVAVPN.com</div>
+										<div class="footer-support"><a href="mailto:support@novavpn.com">support@novavpn.com</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		
+
+		</div> <!-- /.page-wrapper -->
+
+
+
+
+		
+		<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/jquery-3.3.1.min.js"><\/script>')</script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
