@@ -63,7 +63,7 @@
 						<div class="step step1 pb-4">
 							<div class="row">
 								<div class="col-12">
-									<div class="section-title step-title" data-toggle="collapse" data-target="#tarrifs-collapse" aria-controls="tarrifs-collapse" aria-expanded="true" role="button">Choose best<br> to yourself</div>
+									<div class="section-title step-title">Choose best<br> to yourself</div>
 								</div>
 								<div class="col-12">
 									<div class="collapse show" id="tarrifs-collapse">
@@ -107,18 +107,17 @@
 						<div class="step step2 pb-4">
 							<div class="row">
 								<div class="col-12">
-									<div class="section-title step-title" data-toggle="collapse" data-target="#login-collapse" aria-controls="login-collapse" aria-expanded="false" role="button">Enter account<br> information</div>
+									<div class="section-title step-title">Enter account<br> information</div>
 								</div>
 								<div class="col-12">
 									<div class="collapse" id="login-collapse">
 										<div class="step-info">Already signed up? <a href="#">Sign in now</a></div>
-										<form action="#">
+										<form action="#" id="login-form">
 											<div class="row align-items-xl-end">
 												<div class="col-12 col-md-9 col-lg-7 col-xl-6">
-													<input type="email" name="Email" class="form-control" autocomplete="off" placeholder="Your email" required>
-													<input type="password" name="Password" class="form-control" id="password" autocomplete="off" placeholder="Password" required>
-													<input type="password" name="Password Confirm" class="form-control" id="password-confirm" autocomplete="off" placeholder="Confirm password" required>
-													<div class="error">Passwords do not match</div>
+													<input type="email" name="email" class="form-control" placeholder="Your email">
+													<input type="password" name="password" class="form-control" id="password" autocomplete="off" placeholder="Password">
+													<input type="password" name="password_confirm" class="form-control" id="password_confirm" autocomplete="off" placeholder="Confirm password">
 												</div>
 												<div class="col-12 col-md-9 col-lg-7 col-xl-6">
 													<div class="form-text">We are committed to keeping your information confidential, and will use it solely to provide you with content and login information related to NOVAVPN.
@@ -136,7 +135,7 @@
 					<div class="step step3">
 						<div class="row">
 							<div class="col-12">
-								<div class="section-title step-title" data-toggle="collapse" data-target="#step-accordion" aria-controls="step-accordion" aria-expanded="false" role="button">Choose billing<br> method</div>
+								<div class="section-title step-title">Choose billing<br> method</div>
 							</div>
 							<div class="col-12">
 								<div class="step-accordion collapse" id="step-accordion">
@@ -156,31 +155,31 @@
 						
 											<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#step-accordion">
 												<div class="collapse-form">
-													<form action="#">
+													<form action="#" class="payment-form1">
 														<div class="row">
 															<div class="form-group col-12 col-md-6">
 																<label for="inputFirstName1">First name</label>
-																<input type="text" class="form-control" id="inputFirstName1" autocomplete="off" required>
+																<input type="text" class="card-firstName form-control" name="inputFirstName1"  id="inputFirstName1">
 															</div>
 															<div class="form-group col-12 col-md-6">
 																<label for="inputLastName1">Last name</label>
-																<input type="text" class="form-control" id="inputLastName1" autocomplete="off" required>
+																<input type="text" class="card-lastName form-control" name="inputLastName1" id="inputLastName1">
 															</div>
 															<div class="form-group col-12 col-md-6">
 																<label for="inputCardNumber1">Сard number <i class="my-tooltip" data-toggle="tooltip" data-placement="top" title="Enter 16 numbers"></i></label>
-																<input type="text" class="form-control restrict-str" id="inputCardNumber1" autocomplete="off" maxlength="16" placeholder="0000 0000 0000 0000" required>
+																<input type="text" class="card-number form-control" id="inputCardNumber1" name="inputCardNumber1" placeholder="0000 0000 0000 0000">
 															</div>
 															<div class="form-group col-6">
 																<label for="inputExpirationDate1">Expiration date</label>
-																<input type="text" class="form-control restrict-str" id="inputExpirationDate1" autocomplete="off" maxlength="4" placeholder="MM / YY" required>
+																<input type="text" class="card-date form-control" id="inputExpirationDate1" name="inputExpirationDate1" placeholder="MM / YY">
 															</div>
 															<div class="form-group col-6">
 																<label for="inputCvv1">cvv<i class="my-tooltip" data-toggle="tooltip" data-placement="top" title="Enter 3 numbers"></i></label>
-																<input type="text" class="form-control restrict-str" id="inputCvv1" placeholder="000" autocomplete="off" maxlength="3" required>
+																<input type="text" class="card-cvv form-control" id="inputCvv1" name="inputCvv1" placeholder="000">
 															</div>
 															<div class="form-group col-6">
 																<label for="inputPostalCode1">Postal code<i class="my-tooltip" data-toggle="tooltip" data-placement="top" title="Postal code is bla bla bla"></i></label>
-																<input type="text" class="form-control restrict-str" id="inputPostalCode1" autocomplete="off" maxlength="3" placeholder="000" required>
+																<input type="text" class="card-postal form-control" id="inputPostalCode1" name="inputPostalCode1" placeholder="000">
 															</div>
 															<div class="col-12"><div class="form-divider"></div></div>
 														</div>
@@ -188,7 +187,7 @@
 															<div class="form-group col-12 col-md-6">
 																<label><a href="#inputCoupon1" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="inputCoupon1">Got coupon?</a></label>
 																<div class="collapse" id="inputCoupon1">
-																	<input type="text" class="form-control restrict-str" placeholder="0000 0000 0000 0000" autocomplete="off" maxlength="16">
+																	<input type="text" class="card-coupon form-control" placeholder="0000 0000 0000 0000" name="inputCoupon1">
 																</div>
 															</div>
 															<div class="col-12 col-md-6 d-flex align-items-center">
@@ -212,39 +211,39 @@
 						
 											<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#step-accordion">
 												<div class="collapse-form">
-													<form action="#">
+													<form action="#" class="payment-form2">
 														<div class="row">
 															<div class="form-group col-12 col-md-6">
 																<label for="inputFirstName2">First name</label>
-																<input type="text" class="form-control" id="inputFirstName2" autocomplete="off" required>
+																<input type="text" class="card-firstName form-control" name="inputFirstName2"  id="inputFirstName2">
 															</div>
 															<div class="form-group col-12 col-md-6">
 																<label for="inputLastName2">Last name</label>
-																<input type="text" class="form-control" id="inputLastName2" autocomplete="off" required>
+																<input type="text" class="card-lastName form-control" name="inputLastName2" id="inputLastName2">
 															</div>
 															<div class="form-group col-12 col-md-6">
 																<label for="inputCardNumber2">Сard number <i class="my-tooltip" data-toggle="tooltip" data-placement="top" title="Enter 16 numbers"></i></label>
-																<input type="text" class="form-control restrict-str" id="inputCardNumber2" autocomplete="off" maxlength="16" placeholder="0000 0000 0000 0000" required>
+																<input type="text" class="card-number form-control" id="inputCardNumber2" name="inputCardNumber2" placeholder="0000 0000 0000 0000">
 															</div>
 															<div class="form-group col-6">
 																<label for="inputExpirationDate2">Expiration date</label>
-																<input type="text" class="form-control restrict-str" id="inputExpirationDate2" autocomplete="off" maxlength="4" placeholder="MM / YY" required>
+																<input type="text" class="card-date form-control" id="inputExpirationDate2" name="inputExpirationDate2" placeholder="MM / YY">
 															</div>
 															<div class="form-group col-6">
 																<label for="inputCvv2">cvv<i class="my-tooltip" data-toggle="tooltip" data-placement="top" title="Enter 3 numbers"></i></label>
-																<input type="text" class="form-control restrict-str" id="inputCvv2" placeholder="000" autocomplete="off" maxlength="3" required>
+																<input type="text" class="card-cvv form-control" id="inputCvv2" name="inputCvv2" placeholder="000">
 															</div>
 															<div class="form-group col-6">
 																<label for="inputPostalCode2">Postal code<i class="my-tooltip" data-toggle="tooltip" data-placement="top" title="Postal code is bla bla bla"></i></label>
-																<input type="text" class="form-control restrict-str" id="inputPostalCode2" autocomplete="off" maxlength="3" placeholder="000" required>
+																<input type="text" class="card-postal form-control" id="inputPostalCode2" name="inputPostalCode2" placeholder="000">
 															</div>
 															<div class="col-12"><div class="form-divider"></div></div>
 														</div>
 														<div class="row mt-md-2">
 															<div class="form-group col-12 col-md-6">
-																<label><a href="#inputCoupon2" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="inputCoupon2">Got coupon?</a></label>
+																<label><a href="#inputCoupon2" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="inputCoupon1">Got coupon?</a></label>
 																<div class="collapse" id="inputCoupon2">
-																	<input type="text" class="form-control restrict-str" placeholder="0000 0000 0000 0000" autocomplete="off" maxlength="16">
+																	<input type="text" class="card-coupon form-control" placeholder="0000 0000 0000 0000" name="inputCoupon2">
 																</div>
 															</div>
 															<div class="col-12 col-md-6 d-flex align-items-center">
@@ -271,31 +270,31 @@
 						
 											<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#step-accordion">
 												<div class="collapse-form">
-													<form action="#">
+													<form action="#" class="payment-form3">
 														<div class="row">
 															<div class="form-group col-12 col-md-6">
 																<label for="inputFirstName3">First name</label>
-																<input type="text" class="form-control" id="inputFirstName3" autocomplete="off" required>
+																<input type="text" class="form-control" id="inputFirstName3" name="inputFirstName3">
 															</div>
 															<div class="form-group col-12 col-md-6">
 																<label for="inputLastName3">Last name</label>
-																<input type="text" class="form-control" id="inputLastName3" autocomplete="off" required>
+																<input type="text" class="form-control" id="inputLastName3" name="inputLastName3">
 															</div>
 															<div class="form-group col-12 col-md-6">
 																<label for="inputCardNumber3">Сard number <i class="my-tooltip" data-toggle="tooltip" data-placement="top" title="Enter 16 numbers"></i></label>
-																<input type="text" class="form-control restrict-str" id="inputCardNumber3" autocomplete="off" maxlength="16" placeholder="0000 0000 0000 0000" required>
+																<input type="text" class="form-control" id="inputCardNumber3" name="inputCardNumber3" placeholder="0000 0000 0000 0000">
 															</div>
 															<div class="form-group col-6">
 																<label for="inputExpirationDate3">Expiration date</label>
-																<input type="text" class="form-control restrict-str" id="inputExpirationDate3" autocomplete="off" maxlength="4" placeholder="MM / YY" required>
+																<input type="text" class="form-control" id="inputExpirationDate3" name="inputExpirationDate3" placeholder="MM / YY" required>
 															</div>
 															<div class="form-group col-6">
 																<label for="inputCvv3">cvv<i class="my-tooltip" data-toggle="tooltip" data-placement="top" title="Enter 3 numbers"></i></label>
-																<input type="text" class="form-control restrict-str" id="inputCvv3" placeholder="000" autocomplete="off" maxlength="3" required>
+																<input type="text" class="form-control" id="inputCvv3" placeholder="000" name="inputCvv3" required>
 															</div>
 															<div class="form-group col-6">
 																<label for="inputPostalCode3">Postal code<i class="my-tooltip" data-toggle="tooltip" data-placement="top" title="Postal code is bla bla bla"></i></label>
-																<input type="text" class="form-control restrict-str" id="inputPostalCode3" autocomplete="off" maxlength="3" placeholder="000" required>
+																<input type="text" class="form-control" id="inputPostalCode3" name="inputPostalCode3" placeholder="000" required>
 															</div>
 															<div class="col-12"><div class="form-divider"></div></div>
 														</div>
@@ -303,7 +302,7 @@
 															<div class="form-group col-12 col-md-6">
 																<label><a href="#inputCoupon3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="inputCoupon3">Got coupon?</a></label>
 																<div class="collapse" id="inputCoupon3">
-																	<input type="text" class="form-control restrict-str" placeholder="0000 0000 0000 0000" autocomplete="off" maxlength="16">
+																	<input type="text" class="form-control" placeholder="0000 0000 0000 0000" name="inputCoupon3">
 																</div>
 															</div>
 															<div class="col-12 col-md-6 d-flex align-items-center">
@@ -579,6 +578,9 @@
 		
 		<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/jquery-3.3.1.min.js"><\/script>')</script>
+
+		<script src="js/jquery.validate.min.js"></script>
+		<script src="js/jquery.mask.min.js"></script>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
