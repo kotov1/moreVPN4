@@ -137,10 +137,17 @@ ul
 		color: #383c43		
 	input
 		padding: 1.1rem .5rem .9rem 2rem
-		font: 12px $think_font
-		text-transform: uppercase
-		color: #dadadb
+		font: 16px $think_font
+		color: #383c42
 		letter-spacing: 1px
+		&::placeholder
+			text-transform: uppercase
+			font-size: 12px
+			color: #dadadb
+		&:focus
+			color: #383c42
+			border-color: rgba(#f7c03f,.26)
+			box-shadow: 0 0 0 0.2rem rgba(#f7c03f,.26)
 
 	.error+.error
 		font: 14px "GothamLight", "GothamMedium", sans-serif
@@ -186,12 +193,13 @@ ul
 		margin-top: 1rem
 		.card
 			border: none
+			background-color: transparent
 		.card-body
 			padding-bottom: 0
 		.card-header
 			position: relative
 			padding: 0
-			background-color: #fff
+			background-color: transparent
 			&::before
 				content: ''
 				display: block
@@ -224,8 +232,6 @@ ul
 			&:focus
 				outline: 2px solid #f7c04f
 				border: none
-			&
-			
 			img
 				display: none
 				margin-left: 18px
@@ -571,7 +577,7 @@ ul
 		padding: 0
 		list-style-type: none
 		a
-			display: block
+			display: inline-block
 			padding: .1rem 0
 			color: inherit
 

@@ -196,10 +196,35 @@ ul {
 }
 .steps input {
   padding: 1.1rem 0.5rem 0.9rem 2rem;
-  font: 12px "GothamLight", "GothamMedium", sans-serif;
-  text-transform: uppercase;
-  color: #dadadb;
+  font: 16px "GothamLight", "GothamMedium", sans-serif;
+  color: #383c42;
   letter-spacing: 1px;
+}
+.steps input::-webkit-input-placeholder {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #dadadb;
+}
+.steps input:-ms-input-placeholder {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #dadadb;
+}
+.steps input::-ms-input-placeholder {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #dadadb;
+}
+.steps input::placeholder {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #dadadb;
+}
+.steps input:focus {
+  color: #383c42;
+  border-color: rgba(247, 192, 63, 0.26);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(247, 192, 63, 0.26);
+          box-shadow: 0 0 0 0.2rem rgba(247, 192, 63, 0.26);
 }
 .steps .error + .error {
   font: 14px "GothamLight", "GothamMedium", sans-serif;
@@ -249,6 +274,7 @@ ul {
 }
 .step-accordion .card {
   border: none;
+  background-color: transparent;
 }
 .step-accordion .card-body {
   padding-bottom: 0;
@@ -256,7 +282,7 @@ ul {
 .step-accordion .card-header {
   position: relative;
   padding: 0;
-  background-color: #fff;
+  background-color: transparent;
 }
 .step-accordion .card-header::before {
   content: "";
@@ -701,7 +727,7 @@ ul {
   list-style-type: none;
 }
 .footer-list a {
-  display: block;
+  display: inline-block;
   padding: 0.1rem 0;
   color: inherit;
 }

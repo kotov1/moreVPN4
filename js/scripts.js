@@ -46,7 +46,7 @@ $(function() {
 
 	// FORM VALIDATION
 	$('.card-firstName, .card-lastName').keypress(function(key) { ;
-		if((key.charCode >= 33 && key.charCode <= 64) || (key.charCode <= 91 && key.charCode <= 96) || (key.charCode >= 123 && key.charCode <= 127)) return false;
+		if((key.charCode >= 33 && key.charCode <= 64) || (key.charCode >= 91 && key.charCode <= 96) || (key.charCode >= 123 && key.charCode <= 127)) return false;
 	});
 
 	$('.card-number').mask("0000 0000 0000 0000");
@@ -114,7 +114,7 @@ $(function() {
 				inputLastName1: "required",
 				inputCardNumber1: {
 						required: true,
-						minlength: 16
+						minlength: 19
 					},
 				inputExpirationDate1: {
 						required: true,
@@ -129,7 +129,7 @@ $(function() {
 					minlength: 3
 				},
 				inputCoupon1: {
-					minlength: 16
+					minlength: 19
 				}	
 			},
 			messages: {
@@ -163,7 +163,7 @@ $(function() {
 				inputLastName2: "required",
 				inputCardNumber2: {
 						required: true,
-						minlength: 16
+						minlength: 19
 					},
 				inputExpirationDate2: {
 						required: true,
@@ -178,7 +178,7 @@ $(function() {
 					minlength: 3
 				},
 				inputCoupon2: {
-					minlength: 16
+					minlength: 19
 				}	
 			},
 			messages: {
@@ -212,7 +212,7 @@ $(function() {
 				inputLastName3: "required",
 				inputCardNumber3: {
 						required: true,
-						minlength: 16
+						minlength: 19
 					},
 				inputExpirationDate3: {
 						required: true,
@@ -227,7 +227,7 @@ $(function() {
 					minlength: 3
 				},
 				inputCoupon3: {
-					minlength: 16
+					minlength: 19
 				}	
 			},
 			messages: {
