@@ -378,6 +378,8 @@ ul {
   margin: 0 0 20px;
   border: 4px solid #f7c04f;
   cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 .tarrifs-item.recommend .tarrifs-price, .tarrifs-item:hover .tarrifs-price {
   font-size: 58px;
@@ -968,9 +970,9 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background: #fff;
   background-size: cover;
 }
@@ -1247,6 +1249,21 @@ ul {
     margin-left: 10px;
   }
 
+  .thanks-page {
+    min-height: 100vh;
+    height: 1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: #262527;
+  }
   .thanks-page .header {
     background-position: 65% 0;
     min-height: 515px;
