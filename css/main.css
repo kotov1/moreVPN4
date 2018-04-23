@@ -745,6 +745,280 @@ ul {
   color: #8abcf1;
 }
 
+.thanks-page .header {
+  background-position: 45% 100%;
+  position: relative;
+  min-height: 415px;
+}
+.thanks-page .header::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  z-index: 0;
+}
+.thanks-page .page-heading {
+  margin-bottom: 2rem;
+}
+.thanks-page .info {
+  overflow-x: hidden;
+}
+.thanks-page .info-title {
+  margin-bottom: 1.5rem;
+  font: 1.125rem "GothamMedium", sans-serif;
+  color: #262527;
+}
+.thanks-page .info-device {
+  font: 1.125rem "GothamMedium", sans-serif;
+  color: #292929;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.thanks-page .info-device-descr {
+  font-family: "GothamLight", "GothamMedium", sans-serif;
+  color: #262527;
+}
+.thanks-page .info-os {
+  padding: 1rem;
+}
+.thanks-page .info-os-icon {
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  background: url("../img/icons/os-sprite.png") no-repeat;
+}
+.thanks-page .info-os-andr {
+  margin-right: 15px;
+  background-position: 0 0;
+}
+.thanks-page .info-os-ios {
+  background-position: -64px 0;
+}
+.thanks-page .info-os-win {
+  margin-right: 15px;
+  background-position: -127px 0;
+}
+.thanks-page .info-os-app {
+  background-position: -190px 0;
+}
+.thanks-page .faq {
+  padding: 2rem 0;
+  color: #fff;
+  font-family: "GothamLight", "GothamMedium", sans-serif;
+  background-color: #262527;
+}
+.thanks-page .faq-title {
+  display: inline-block;
+  position: relative;
+}
+.thanks-page .faq-list {
+  padding-left: 1rem;
+  list-style-type: disc;
+}
+.thanks-page .faq-list .faq-link {
+  color: rgba(255, 255, 255, 0.8);
+}
+.thanks-page .faq-link {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.thanks-page .faq-link:hover {
+  text-decoration: none;
+}
+.thanks-page .faq-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.thanks-page .faq-link:hover::after {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.payment-page {
+  min-height: 100vh;
+  height: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fff;
+  background-size: cover;
+}
+.payment-page .header {
+  min-height: auto;
+  background: none;
+}
+.payment-page .footer {
+  margin-top: auto;
+}
+
+.payment-wait {
+  min-width: 290px;
+  position: fixed;
+  top: 32%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.payment-wait-outer, .payment-wait-inner {
+  margin: 0 auto;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.payment-wait-outer {
+  width: 28px;
+  height: 28px;
+}
+
+.payment-wait-inner {
+  border: 2px solid #9c9c9c;
+  width: 28px;
+  height: 28px;
+}
+
+.payment-wait-outer::before,
+.payment-wait-inner::before,
+.payment-wait-inner::after {
+  content: "";
+  position: absolute;
+  border: 5px solid #9c9c9c;
+  left: -20px;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  border-radius: 50%;
+  -webkit-animation: pulse 2.4s linear infinite;
+          animation: pulse 2.4s linear infinite;
+  opacity: 0;
+}
+
+.payment-wait-inner::after {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.payment-wait-outer::before {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+.payment-wait-outer::after {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: rgba(1, 52, 107, 0.5);
+  border-radius: 50%;
+  display: block;
+  width: 40px;
+  height: 5px;
+}
+
+.payment-wait-text {
+  margin-top: 60px;
+  font: 14px "GothamLight", "GothamMedium", sans-serif;
+  text-align: center;
+}
+.payment-wait-text-accent {
+  text-transform: uppercase;
+  color: #00faa5;
+}
+
+.payment-complete {
+  display: none;
+  width: 13px;
+  height: 10px;
+  margin: 0 auto;
+  background: url("../img/icons/complete.png") no-repeat 50% 50%;
+}
+
+.payment-wait.completed .payment-wait-outer, .payment-wait.completed .payment-wait-inner {
+  background-color: #00faa5;
+  border-color: #00faa5;
+}
+.payment-wait.completed .payment-wait-outer::before,
+.payment-wait.completed .payment-wait-inner::before,
+.payment-wait.completed .payment-wait-inner::after {
+  border-color: #00faa5;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+.payment-wait.completed .payment-complete {
+  display: inline-block;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 0;
+    border-width: 4px;
+  }
+  50% {
+    opacity: 1;
+    border-width: 1px;
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0;
+    border-width: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 0;
+    border-width: 4px;
+  }
+  50% {
+    opacity: 1;
+    border-width: 1px;
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0;
+    border-width: 0;
+  }
+}
 @media only screen and (min-width: 400px) {
   .step {
     padding-left: 65px;
@@ -870,19 +1144,15 @@ ul {
     margin-left: 10px;
   }
 
-  .thanks-page {
-    min-height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    background-color: #262527;
+  .thanks-page .header {
+    background-position: 65% 0;
+    min-height: 515px;
+  }
+  .thanks-page .header::before {
+    display: none;
+  }
+  .thanks-page .info-title {
+    text-transform: uppercase;
   }
 
   /* */

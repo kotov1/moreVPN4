@@ -25,7 +25,7 @@
 	<body>
 
 
-		<div class="page-wrapper thanks-page">
+		<div class="page-wrapper payment-page">
 
 			<header class="header">
 				<div class="container">
@@ -38,62 +38,17 @@
 							</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-12 col-md-8">
-							<div class="bottom-line">
-								<h1 class="page-heading">Thank You for payment!</h1>
-								<div class="info-title">How to download the app?</div>
-							</div>
-						</div>
-					</div>
-					<div class="row align-items-center">
-						<div class="col-auto d-flex align-items-center justify-content-start">
-							<i class="info-os-icon info-os-andr"></i>
-							<i class="info-os-icon info-os-ios"></i>
-						</div>
-						<div class="col-6">
-							<div class="info-device">mobile</div>
-							<div class="info-device-descr">Android, iPhone & iPad</div>
-						</div>
-					</div>
-					<div class="row mt-3 align-items-center">
-						<div class="col-auto d-flex align-items-center justify-content-start">
-							<i class="info-os-icon info-os-win"></i>
-							<i class="info-os-icon info-os-app"></i>
-						</div>
-						<div class="col-6">
-							<div class="info-device">computer</div>
-							<div class="info-device-descr">Laptop, Desktop & Routers</div>
-						</div>
-					</div>
 				</div>
 			</header>
 
 
-			<div class="faq">
-				<div class="container">
-					<div class="row">
-						<div class="col-12 col-xl-9">	
-							<div class="faq-title"><a href="#" class="faq-link">Frequently asked Questions</a></div>
-							<ul class="faq-list row no-gutters">
-								<li class="col-12 col-md-4"><a class="faq-link" href="#">How download the app?</a></li>
-								<li class="col-12 col-md-4"><a class="faq-link" href="#">How download the app?</a></li>
-								<li class="col-12 col-md-4"><a class="faq-link" href="#">How download the app?</a></li>
-								<li class="col-12 col-md-4"><a class="faq-link" href="#">My payment is failed</a></li>
-								<li class="col-12 col-md-4"><a class="faq-link" href="#">My payment is failed</a></li>
-								<li class="col-12 col-md-4"><a class="faq-link" href="#">My payment is failed</a></li>
-								<li class="col-12 col-md-4"><a class="faq-link" href="#">How to connect to VPN</a></li>
-								<li class="col-12 col-md-4"><a class="faq-link" href="#">How to connect to VPN</a></li>
-							</ul>
-						</div>
-						<div class="col-12 col-xl-3">
-							<div class="row">
-								<div class="col-12"><div class="faq-title"><a href="#" class="faq-link">Support</a></div></div>
-								<div class="col-12"><div class="faq-title"><a href="#" class="faq-link">Get Feedback</a></div></div>
-							</div>
-						</div>
+			<div class="payment-wait">
+				<div class="payment-wait-outer">
+					<div class="payment-wait-inner">
+						<i class="payment-complete"></i>
 					</div>
 				</div>
+				<div class="payment-wait-text">Waiting Your Payment...</div>
 			</div>
 
 
@@ -175,5 +130,26 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 		<script src="js/scripts.js"></script>
+
+		<script>
+
+			function redirect() {
+				location.replace("thanks.html");
+			}
+
+			function completePayment() {
+				$('.payment-wait').toggleClass('completed');
+				if ($('.payment-wait').hasClass('completed')) {
+					$('.payment-wait-text').html('Yor Payment is <span class="payment-wait-text-accent">completed!</span>');
+				}
+			}
+
+			$(document).ready(function() {
+				setTimeout('completePayment()',2500);
+				setTimeout('redirect()',3500);
+			});
+
+		</script>
+		
 	</body>
 </html>
