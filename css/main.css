@@ -196,35 +196,35 @@ ul {
 }
 .steps input {
   padding: 1.1rem 0.5rem 0.9rem 2rem;
-  font: 16px "GothamLight", "GothamMedium", sans-serif;
-  color: #383c42;
+  font: 14px "GothamLight", "GothamMedium", sans-serif;
+  color: #383c43;
   letter-spacing: 1px;
 }
 .steps input::-webkit-input-placeholder {
   text-transform: uppercase;
-  font-size: 12px;
-  color: #dadadb;
+  font: 12px "GothamLight", "GothamMedium", sans-serif;
+  color: #858585;
 }
 .steps input:-ms-input-placeholder {
   text-transform: uppercase;
-  font-size: 12px;
-  color: #dadadb;
+  font: 12px "GothamLight", "GothamMedium", sans-serif;
+  color: #858585;
 }
 .steps input::-ms-input-placeholder {
   text-transform: uppercase;
-  font-size: 12px;
-  color: #dadadb;
+  font: 12px "GothamLight", "GothamMedium", sans-serif;
+  color: #858585;
 }
 .steps input::placeholder {
   text-transform: uppercase;
-  font-size: 12px;
-  color: #dadadb;
+  font: 12px "GothamLight", "GothamMedium", sans-serif;
+  color: #858585;
 }
 .steps input:focus {
-  color: #383c42;
-  border-color: rgba(247, 192, 63, 0.26);
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(247, 192, 63, 0.26);
-          box-shadow: 0 0 0 0.2rem rgba(247, 192, 63, 0.26);
+  color: #383c43;
+  border-color: rgba(247, 192, 79, 0.25);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(247, 192, 79, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(247, 192, 79, 0.25);
 }
 .steps .error + .error {
   font: 14px "GothamLight", "GothamMedium", sans-serif;
@@ -236,6 +236,7 @@ ul {
 }
 .step-title {
   position: relative;
+  font: 1.75em "GothamBold", "GothamMedium", sans-serif;
 }
 .step-title::before {
   content: "";
@@ -324,6 +325,7 @@ ul {
 .step-accordion-btn img {
   display: none;
   margin-left: 18px;
+  max-height: 25px;
 }
 
 .step2-sign {
@@ -345,11 +347,14 @@ ul {
 .step3 input {
   padding: 0.8rem 0.5rem 0.8rem 2rem;
 }
-.step3 a {
-  color: #005cfe;
+.step3 a:not(.btn) {
+  color: #006ad7;
 }
-.step3 a:hover {
-  color: #196cff;
+.step3 a:not(.btn):hover {
+  color: #0077f1;
+}
+.step3 .card-number, .step3 .card-cvv {
+  background: #fff url("../img/icons/input-lock.png") no-repeat calc(100% - 20px) 50%;
 }
 
 .tarrifs {
@@ -373,7 +378,7 @@ ul {
 .tarrifs-item:last-child {
   margin-bottom: 0;
 }
-.tarrifs-item.recommend, .tarrifs-item:hover {
+.tarrifs-item.recommend {
   max-width: 245px;
   margin: 0 0 20px;
   border: 4px solid #f7c04f;
@@ -381,45 +386,40 @@ ul {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-.tarrifs-item.recommend .tarrifs-price, .tarrifs-item:hover .tarrifs-price {
+.tarrifs-item.recommend .tarrifs-price {
   font-size: 58px;
   line-height: 1.3;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   color: #202020;
 }
-.tarrifs-item.recommend .tarrifs-price .symbol, .tarrifs-item:hover .tarrifs-price .symbol {
+.tarrifs-item.recommend .tarrifs-price .symbol {
   font-size: 30px;
   line-height: 58px;
 }
-.tarrifs-item.recommend .tarrifs-price .period, .tarrifs-item:hover .tarrifs-price .period {
+.tarrifs-item.recommend .tarrifs-price .period {
   font-size: 30px;
   line-height: 55px;
 }
-.tarrifs-item.recommend .tarrifs-discount, .tarrifs-item:hover .tarrifs-discount {
+.tarrifs-item.recommend .tarrifs-discount {
   color: #fd0047;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-.tarrifs-item.recommend .tarrifs-price-old, .tarrifs-item:hover .tarrifs-price-old {
+.tarrifs-item.recommend .tarrifs-price-old {
   display: block;
 }
-.tarrifs-item.recommend .tarrifs-info, .tarrifs-item:hover .tarrifs-info {
+.tarrifs-item.recommend .tarrifs-info {
   color: #202020;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-.tarrifs-item.recommend .tarrifs-guarantee, .tarrifs-item:hover .tarrifs-guarantee {
+.tarrifs-item.recommend .tarrifs-guarantee {
   color: #b6b5b5;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-.tarrifs-item.recommend .tarrifs-purchase, .tarrifs-item:hover .tarrifs-purchase {
-  background-color: #24c25c;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-.tarrifs-item.recommend .tarrifs-purchase:hover, .tarrifs-item:hover .tarrifs-purchase:hover {
+.tarrifs-item.recommend .tarrifs-purchase {
   background-color: #1c9748;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -437,6 +437,9 @@ ul {
   text-transform: uppercase;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+}
+.tarrifs-price-old-wrap {
+  min-height: 20px;
 }
 .tarrifs-price-old {
   display: none;
@@ -506,11 +509,10 @@ ul {
   position: absolute;
   top: -3px;
   right: -30px;
-  width: 19px;
-  height: 19px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
-  background: url("../img/icons/input-icons-set.png") no-repeat;
-  background-position: -20px 0;
+  background: url("../img/icons/input-tooltip.png") no-repeat 0 0;
 }
 
 .form-divider {
@@ -532,23 +534,59 @@ ul {
   background-color: #014284;
 }
 
-.step3-guarantee, .step3-confirm {
-  margin-top: 15px;
-  font-size: 14px;
+.payment-footer {
+  font-family: "Roboto", sans-serif;
 }
 
-.step3-guarantee {
+.step3-guarantee, .step3-confirm, .tarrif-info {
+  margin-top: 10px;
+}
+
+.step3-guarantee, .step3-confirm, .tarrif-info, .step3-contact {
+  font-size: 12px;
+}
+
+.step3-guarantee, .tarrif-info {
   color: #333;
-  font-family: "GothamBold", "GothamMedium", sans-serif;
 }
 
-.step3-confirm {
+.step3-confirm, .step3-contact {
   color: #969696;
-  font-family: "GothamLight", "GothamMedium", sans-serif;
+}
+
+.step3-contact {
+  margin-top: 20px;
+}
+.step3-contact-info, .step3-contact-data {
+  margin-bottom: 0;
+}
+
+.payment-form1, .payment-form2, .payment-form3 {
+  padding-bottom: 10px;
+}
+
+.payment-form-info {
+  padding: 24px 0 40px;
+  min-height: 170px;
+  height: auto;
+  color: #333;
+  font: 14px "Roboto", sans-serif;
+  text-align: center;
+}
+.payment-form-info .row {
+  width: 100%;
+}
+.payment-form-info-text {
+  margin: 20px 0 0 0;
+}
+.payment-form-info img {
+  display: block;
+  margin: 10px;
+  max-height: 30px;
 }
 
 .collapse-form {
-  padding: 10px 0;
+  padding: 10px 0 20px;
 }
 
 .howTo {
@@ -846,11 +884,12 @@ ul {
 .footer-copy, .footer-support {
   font-size: 0.75em;
 }
-.footer-support {
-  color: #4a7ed9;
+.footer-support a {
+  color: #0025ff;
+  font-weight: bold;
 }
 .footer-support a:hover {
-  color: #8abcf1;
+  color: #3351ff;
 }
 
 .thanks-page .header {
@@ -1200,13 +1239,30 @@ ul {
   }
 
   .step3-guarantee {
-    padding: 10px 0 10px 40px;
-    background: url("../img/icons/guarantee30.png") no-repeat 0 0;
+    padding: 10px 0 10px 45px;
+    position: relative;
+  }
+  .step3-guarantee::before {
+    content: "";
+    width: 37px;
+    height: 32px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url("../img/icons/7guarantee.svg") no-repeat 50% 50%;
+    z-index: 0;
   }
 
   .step-accordion-btn-text {
     width: 130px;
     display: inline-block;
+  }
+  .step-accordion-btn img {
+    margin-left: 18px;
+    display: inline-block;
+  }
+  .step-accordion-btn img:last-child, .step-accordion-btn img:nth-of-type(6) {
+    display: none;
   }
 
   .howTo {
@@ -1313,11 +1369,15 @@ ul {
     margin: 0 10px;
   }
 
-  .tarrifs-item.recommend, .tarrifs-item:hover {
+  .tarrifs-item.recommend {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 335px;
             flex: 0 0 335px;
     margin: 0 10px;
+  }
+
+  .step-accordion-btn img:last-child, .step-accordion-btn img:nth-of-type(6) {
+    display: inline-block;
   }
 
   .advantages {

@@ -100,7 +100,6 @@ ul
 
 
 
-
 .step-wrapper
 	position: relative
 	&::before
@@ -118,7 +117,6 @@ ul
 .steps
 	padding: 3rem 0
 	counter-reset: step
-
 	.form-line
 		padding: 10px 0
 	.form-text
@@ -134,21 +132,21 @@ ul
 		margin-top: 10px
 		padding-left: 35px
 		background: url('../img/icons/guarantee.png') no-repeat 0 0
-		color: #383c43		
+		color: #383c43	
 	input
 		padding: 1.1rem .5rem .9rem 2rem
-		font: 16px $think_font
-		color: #383c42
+		font: 14px $think_font
+		color: #383c43	
 		letter-spacing: 1px
 		&::placeholder
 			text-transform: uppercase
-			font-size: 12px
-			color: #dadadb
+			font: 12px $think_font
+			color: #858585
 		&:focus
-			color: #383c42
-			border-color: rgba(#f7c03f,.26)
-			box-shadow: 0 0 0 0.2rem rgba(#f7c03f,.26)
-
+			color: #383c43
+			border-color: rgba(#f7c04f,.25)
+			box-shadow: 0 0 0 0.2rem rgba(#f7c04f,.25)
+			
 	.error+.error
 		font: 14px "GothamLight", "GothamMedium", sans-serif
 		color: #ff3d4c
@@ -158,6 +156,7 @@ ul
 	padding-left: 35px
 	&-title
 		position: relative
+		font: 1.75em $bold_font
 		&::before
 			content: ''
 			display: block
@@ -235,6 +234,7 @@ ul
 			img
 				display: none
 				margin-left: 18px
+				max-height: 25px
 
 .step2
 	&-sign
@@ -253,10 +253,12 @@ ul
 		letter-spacing: 1px
 	input
 		padding: 0.8rem 0.5rem 0.8rem 2rem	
-	a
-		color: #005cfe
+	a:not(.btn)
+		color: #006ad7
 		&:hover
-			color: lighten(#005cfe, 5%)
+			color: lighten(#006ad7, 5%)
+	.card-number, .card-cvv
+		background: #fff url('../img/icons/input-lock.png') no-repeat calc(100% - 20px) 50%
 
 .tarrifs
 	position: relative
@@ -275,7 +277,7 @@ ul
 		transition: all .2s
 		&:last-child
 			margin-bottom: 0
-		&.recommend, &:hover
+		&.recommend
 			max-width: 245px
 			margin: 0 0 20px
 			border: 4px solid rgb(247, 192, 79)
@@ -304,11 +306,8 @@ ul
 				color: #b6b5b5
 				transition: all .2s
 			.tarrifs-purchase
-				background-color: #24c25c
+				background-color: darken(#24c25c, 10%)
 				transition: all .2s
-				&:hover
-					background-color: darken(#24c25c, 10%)
-					transition: all .2s
 
 	&-description
 		margin: 0
@@ -321,6 +320,8 @@ ul
 		letter-spacing: 2px
 		text-transform: uppercase
 		transition: all .2s
+	&-price-old-wrap
+		min-height: 20px
 	&-price-old
 		display: none
 		margin: 10px 0 0
@@ -379,11 +380,10 @@ ul
 	position: absolute
 	top: -3px
 	right: -30px
-	width: 19px
-	height: 19px
+	width: 18px
+	height: 18px
 	border-radius: 50%
-	background: url('../img/icons/input-icons-set.png') no-repeat
-	background-position: -20px 0
+	background: url('../img/icons/input-tooltip.png') no-repeat 0 0
 
 .form-divider
 	border-top: 1px solid rgba(0,0,0,.125)
@@ -400,19 +400,41 @@ ul
 	&:hover
 		background-color: lighten(#01356b, 5%)
 
-.step3-guarantee, .step3-confirm
-	margin-top: 15px
-	font-size: 14px
-
-.step3-guarantee 
+.payment-footer
+	font-family: "Roboto", sans-serif
+.step3-guarantee, .step3-confirm, .tarrif-info
+	margin-top: 10px
+.step3-guarantee, .step3-confirm, .tarrif-info, .step3-contact
+	font-size: 12px
+.step3-guarantee, .tarrif-info
 	color: #333
-	font-family: $bold_font
-.step3-confirm
+.step3-confirm, .step3-contact
 	color: #969696
-	font-family: $think_font
-
+.step3-contact
+	margin-top: 20px
+	&-info, &-data
+		margin-bottom: 0
+.payment-form1, .payment-form2, .payment-form3
+	padding-bottom: 10px
+.payment-form-info
+	padding: 24px 0 40px
+	min-height: 170px
+	height: auto
+	color: #333
+	font: 14px "Roboto", sans-serif
+	text-align: center
+	.row
+		width: 100% //IE fix
+	&-text
+		margin: 20px 0 0 0
+	img
+		display: block
+		margin: 10px
+		max-height: 30px
+		
 .collapse-form
-	padding: 10px 0
+	padding: 10px 0 20px
+
 
 
 
@@ -658,10 +680,11 @@ ul
 	&-copy, &-support
 		font-size: .75em
 	&-support
-		color: #4a7ed9
 		a
+			color: #0025ff
+			font-weight: bold
 			&:hover
-				color: #8abcf1
+				color: lighten(#0025ff, 10%)
 
 
 

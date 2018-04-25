@@ -56,12 +56,28 @@
 		font-size: 18px
 
 	.step3-guarantee
-		padding: 10px 0 10px 40px
-		background: url('../img/icons/guarantee30.png') no-repeat 0 0
+		padding: 10px 0 10px 45px
+		position: relative
+		&::before
+			content: ''
+			width: 37px
+			height: 32px
+			position: absolute
+			left: 0
+			top: 0
+			background: url('../img/icons/7guarantee.svg') no-repeat 50% 50%
+			z-index: 0
 
-	.step-accordion-btn-text 
-		width: 130px
-		display: inline-block
+	.step-accordion-btn
+		&-text 
+			width: 130px
+			display: inline-block
+		img
+			margin-left: 18px
+			display: inline-block
+			&:last-child, &:nth-of-type(6)
+				display: none
+
 
 	.howTo
 		background: url('../img/bg/main-page/bg2-lg.jpg') no-repeat 75% 50%
@@ -130,9 +146,14 @@
 	.tarrifs-item
 		flex: 0 0 305px
 		margin: 0 10px
-	.tarrifs-item.recommend, .tarrifs-item:hover
+	.tarrifs-item.recommend
 		flex: 0 0 335px
 		margin: 0 10px
+
+	.step-accordion-btn
+		img
+			&:last-child, &:nth-of-type(6)
+				display: inline-block
 
 	.advantages
 		padding: 4rem 0
