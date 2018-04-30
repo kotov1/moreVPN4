@@ -202,22 +202,22 @@ ul {
 }
 .steps input::-webkit-input-placeholder {
   text-transform: uppercase;
-  font: 12px "GothamLight", "GothamMedium", sans-serif;
+  font: 14px "GothamLight", "GothamMedium", sans-serif;
   color: #858585;
 }
 .steps input:-ms-input-placeholder {
   text-transform: uppercase;
-  font: 12px "GothamLight", "GothamMedium", sans-serif;
+  font: 14px "GothamLight", "GothamMedium", sans-serif;
   color: #858585;
 }
 .steps input::-ms-input-placeholder {
   text-transform: uppercase;
-  font: 12px "GothamLight", "GothamMedium", sans-serif;
+  font: 14px "GothamLight", "GothamMedium", sans-serif;
   color: #858585;
 }
 .steps input::placeholder {
   text-transform: uppercase;
-  font: 12px "GothamLight", "GothamMedium", sans-serif;
+  font: 14px "GothamLight", "GothamMedium", sans-serif;
   color: #858585;
 }
 .steps input:focus {
@@ -345,7 +345,8 @@ ul {
   letter-spacing: 1px;
 }
 .step3 input {
-  padding: 0.8rem 0.5rem 0.8rem 2rem;
+  height: 42px;
+  padding: 14px 0 12px 30px;
 }
 .step3 a:not(.btn) {
   color: #006ad7;
